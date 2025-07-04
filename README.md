@@ -18,9 +18,9 @@ Built by Eduardo Monroy, a Senior Software Engineer with 11+ years of experience
 
 ## 🧱 Tech Stack
 
-- Frontend: React (Create React App), TailwindCSS  
-- Backend: Node.js, Express, OpenAI API  
-- API: chat/completions endpoint (GPT-3.5 / GPT-4)
+- **Frontend**: React (Create React App), TailwindCSS  
+- **Backend**: Node.js, Express, OpenAI API  
+- **API**: `chat/completions` endpoint (GPT-3.5 / GPT-4)
 
 ---
 
@@ -28,27 +28,37 @@ Built by Eduardo Monroy, a Senior Software Engineer with 11+ years of experience
 
 ### 1. Clone the repo
 
-git clone https://github.com/your-username/emonroy-com.git  
+```
+git clone https://github.com/emonroy/emonroy-com.git
 cd emonroy-com
+```
 
 ### 2. Install and run backend
 
-cd backend  
+```
+cd backend
 npm install
+```
 
 Create a `.env` file in the `backend/` directory with your OpenAI API key:
 
+```
 OPENAI_API_KEY=sk-...
+```
 
 Then start the server:
 
+```
 node index.js
+```
 
 ### 3. Install and run frontend
 
-cd ../frontend  
-npm install  
+```
+cd ../frontend
+npm install
 npm start
+```
 
 Open http://localhost:3000 in your browser.
 
@@ -58,7 +68,9 @@ Open http://localhost:3000 in your browser.
 
 Your resume and personality are embedded in the GPT system prompt inside:
 
+```
 frontend/src/App.js
+```
 
 You can update your real experience, tone, and hobbies there by editing the `systemMessage`.
 
@@ -75,4 +87,4 @@ Deploy using:
 
 ## 👋 About Me
 
-I'm a Senior Software Engineer with over a decade of experience in frontend development, game engines, and leading product-focused teams. I care deeply about clean code, great UX, and building things that make an impact. I currently work at LinkedIn building premium features for millions of users. Outside of work, I enjoy playing video games, working out, eating out, watching movies, and playing board games with friends.
+I'm a Senior Software Engineer with over a decade of experience in frontend development, game engines, and leading product-focused teams. Currently building premium features at LinkedIn. I enjoy playing video games, working out, eating outside, watching movies, and playing board games with friends.
