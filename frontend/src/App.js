@@ -64,7 +64,7 @@ function App() {
       <div className="mb-6">
         <h2 className="text-xl font-semibold">Resume</h2>
         <p className="bg-white p-4 rounded shadow whitespace-pre-line">
-          Frontend Developer with 4+ years of experience in React, Tailwind, Next.js...
+        I'm a software engineer with over 11 years of experience across various industries, including game development and social networks
         </p>
       </div>
 
