@@ -10,7 +10,7 @@ Built by Eduardo Monroy, a Senior Software Engineer with 11+ years of experience
 
 - 🤖 AI answers recruiter questions about your background  
 - 🧠 Memory: follows up on previous questions in a conversation  
-- 📄 Injects your real resume + personality into GPT context  
+- 📄 Injects your real resume + personality into GPT context (handled on the server)
 - ⚛️ Built with React, Tailwind, Express, and OpenAI's API  
 - 💬 Deployable as a public portfolio chat or private tool  
 
@@ -28,60 +28,67 @@ Built by Eduardo Monroy, a Senior Software Engineer with 11+ years of experience
 
 ### 1. Clone the repo
 
-```
+```bash
 git clone https://github.com/emonroy/emonroy-com.git
 cd emonroy-com
 ```
 
-### 2. Install and run backend
+---
 
-```
+### 2. Setup and run backend
+
+```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file in the `backend/` directory with your OpenAI API key:
+Create a `.env` file in the `backend/` directory:
 
 ```
 OPENAI_API_KEY=sk-...
 ```
 
-Then start the server:
+Start the backend server:
 
-```
+```bash
 node index.js
 ```
 
-### 3. Install and run frontend
-
-```
-cd ../frontend
-npm install
-npm start
-```
-
-Open http://localhost:3000 in your browser.
+> Server runs at `http://localhost:5000`
 
 ---
 
-## 🧠 Personalization
+### 3. Setup and run frontend
 
-Your resume and personality are embedded in the GPT system prompt inside:
+```bash
+cd ../frontend
+npm install
+```
+
+Create a `.env` file in the `frontend/` directory:
 
 ```
-frontend/src/App.js
+REACT_APP_BACKEND_URL=http://localhost:5000
 ```
 
-You can update your real experience, tone, and hobbies there by editing the `systemMessage`.
+Start the frontend:
+
+```bash
+npm start
+```
+
+Then open http://localhost:3000 in your browser.
 
 ---
 
 ## 📦 Deployment
 
-Deploy using:
+You can deploy the app easily with:
 
 - **Frontend**: [Vercel](https://vercel.com) or [Netlify](https://netlify.com)  
-- **Backend**: [Render](https://render.com) or [Railway](https://railway.app)
+- **Backend**: [Render](https://render.com), [Railway](https://railway.app), or [Fly.io](https://fly.io)
+
+> Make sure to update `REACT_APP_BACKEND_URL` in the frontend environment variables to match your deployed backend.
 
 ---
 
