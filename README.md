@@ -95,3 +95,10 @@ You can deploy the app easily with:
 ## 👋 About Me
 
 I'm a Senior Software Engineer with over a decade of experience in frontend development, game engines, and leading product-focused teams. Currently building premium features at LinkedIn. I enjoy playing video games, working out, eating outside, watching movies, and playing board games with friends.
+
+---
+
+## 📄 Attribution
+
+Favicon:
+[By Twitter, CC BY 4.0](https://commons.wikimedia.org/w/index.php?curid=80937197)
