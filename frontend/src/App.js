@@ -43,9 +43,9 @@ function App() {
     };
 
     return (
-        <div className="min-h-screen flex flex-col md:flex-row p-6 bg-gray-50 text-gray-800">
+        <div className="min-h-screen flex flex-col md:flex-row">
             {/* Left rail: Resume PDF */}
-            <div className="md:w-1/2 md:pr-6 mb-6 md:mb-0 h-screen">
+            <div className="md:w-1/2 md:pr-6 mb-6 md:mb-0 h-screen p-6">
                 <h1 className="text-2xl font-bold mb-4">Eduardo Monroy - Resume</h1>
                 <iframe
                     src="/eduardo-monroy-resume.pdf#navpanes=0"
@@ -63,7 +63,7 @@ function App() {
             </div>
 
             {/* Right rail: Chat */}
-            <div className="md:w-1/2 md:pl-6 flex flex-col">
+            <div className="md:w-1/2 md:pl-6 flex flex-col p-6">
                 <h2 className="text-xl font-semibold mb-2">Ask me about my resume</h2>
 
                 <form onSubmit={askGPT} className="mb-2">
