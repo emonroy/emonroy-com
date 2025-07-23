@@ -81,6 +81,16 @@ Then open http://localhost:3000 in your browser.
 
 ---
 
+## 📄 Resume PDF
+
+- The resume PDF is embedded in the left rail of the interface and available for download via a static link (/eduardo-monroy-resume.pdf).
+
+- This file should be placed in the frontend/public/ directory so that it's served efficiently as a static asset.
+
+- **Static files are cached and served by the hosting provider (e.g., Vercel/Netlify), ensuring fast delivery and minimal server load — even during high traffic.**
+
+---
+
 ## 📦 Deployment
 
 You can deploy the app easily with:
